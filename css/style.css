@@ -1,0 +1,138 @@
+/*Colors
+Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+Neutral
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)*/
+
+/*font-family: 'Karla', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'content about';
+    height: 80vh;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.container div {   
+    padding: 30px;
+}
+
+/*Primeiro quadro*/
+
+#header {
+    grid-area: header;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 40px;
+
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+#header h2 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+#header p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/*Segundo quadro*/
+
+#content {
+    grid-area: content;
+    background-color: hsl(179, 62%, 43%);
+    padding-left: 40px;
+}
+
+#content h2 {
+    color: #ffff;
+    font-weight: 700;
+}
+
+span {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#content p {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 40px;
+    margin: 40px auto;
+    text-align: center; 
+    cursor: pointer;
+}
+
+/*Terceiro quadro*/
+
+#about {
+    grid-area: about;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.7;
+    padding-right: 80px;
+    padding-left: 40px;
+}
+
+#about h2 {
+    color: #ffff;
+    font-weight: 700;
+}
+
+#about p {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/*Rodapé*/
+
+.attribution {
+    text-align: center;
+    font-size: 12px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 400;
+}
